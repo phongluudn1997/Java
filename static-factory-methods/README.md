@@ -1,0 +1,1 @@
+- Unlike constructor - Static factory methods have name
