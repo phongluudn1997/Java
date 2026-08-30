@@ -1,1 +1,2 @@
-- Unlike constructor - Static factory methods have name
+- Unlike constructor - Static factory methods have name.
+- Unlike constructor - Static factory methods are not required to create a new object eachtime they're invoked.
