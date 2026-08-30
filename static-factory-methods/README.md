@@ -1,3 +1,4 @@
 - Unlike constructor - Static factory methods have name.
 - Unlike constructor - Static factory methods are not required to create a new object eachtime they're invoked.
 - Unlike constructor - Static factory methods can return an object of any subtype of their return type.
+- The class of returned object can vary from call to call as a function of the input parameters. The implementation classes could be eliminated from a future release with no ill effects.
