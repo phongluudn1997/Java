@@ -1,5 +1,7 @@
-- Unlike constructor - Static factory methods have name.
-- Unlike constructor - Static factory methods are not required to create a new object eachtime they're invoked.
-- Unlike constructor - Static factory methods can return an object of any subtype of their return type.
-- The class of returned object can vary from call to call as a function of the input parameters. The implementation classes could be eliminated from a future release with no ill effects.
-- The class of returned object need not exist when the class containing the method is written: When desining API, we do not need to know that implementation class exist, they can be added in the future.
+5 Advantages of Static Factory Methods:
+
+1. They have names - Express intent clearly (e.g. Color.fromRGB(), Color.fromHEX())
+2. No new object required everytime - Enables caching/flyweight patterns (e.g. Boolean.valueOf())
+3. Can return any subtype - Hide implementation classes behind interfaces/abstract classes (e.g. PaymentGateway)
+4. Return type varies by input - Dynamically chooses optimal subtype based on parameters (e.g. ImageCompressor)
+5. Class need not exist when written - Enables plug-and-play architecture & Service Provider Framework (e.g. JDBC, DriverManager)
